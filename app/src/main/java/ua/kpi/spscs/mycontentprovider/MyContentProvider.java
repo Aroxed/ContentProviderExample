@@ -51,7 +51,7 @@ public class MyContentProvider extends ContentProvider {
     public String getType(Uri uri) {
         switch (uriMatcher.match(uri)) {
             case uriCode:
-                return "vnd.android.cursor.dir/users";
+                return "vnd.android.cursor.dir/users"; // list
             default:
                 throw new IllegalArgumentException("Unsupported URI: " + uri);
         }
